@@ -1,0 +1,15 @@
+.videoResponsive {
+  width: 60%;
+}
+
+.videoResponsive iframe {
+  border: 2px solid #000;
+  border-radius: 20px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .videoResponsive {
+    width: 100%;
+  }
+}

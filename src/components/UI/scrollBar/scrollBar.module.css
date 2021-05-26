@@ -1,0 +1,28 @@
+.ScrollBar {
+  height: 400px;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+}
+
+.ScrollBar img {
+  filter: blur(0);
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.ScrollDown {
+  transform: rotate(180deg);
+}
+
+.ScrollBar img:hover {
+  opacity: 0.3;
+  transition: 0.3s all;
+}
+
+.Filler {
+}

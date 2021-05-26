@@ -1,0 +1,101 @@
+  const examples = [
+    {
+      id: 0,
+      title: 'Stop motion lyric video',
+      deets: 'No Sleep Tonight - The Faders',
+      preview_img: {
+        src: 'assets/works/nosleeptonight/nosleeptonight.png',
+        alt: 'Poster',
+      },
+      pageDeets: {
+        pics: [],
+        embedId: 'Y3PSIq5D2Yg',
+        date: 'June 2019',
+        description: 'Something long',
+      },
+      path: '/0',
+    },
+    {
+      id: 1,
+      title: 'Typeface design',
+      deets: 'Greenwich foot tunnel inspired typeface',
+      preview_img: {
+        src: 'assets/works/foottunnel/webTYPEPOSTER-01.png',
+        alt: 'Poster',
+      },
+      pageDeets: {
+        pics: [
+          'assets/works/foottunnel/webTYPEPOSTER-01.png',
+          'assets/works/foottunnel/webTYPEWRISTBAND.png',
+        ],
+        embedId: '',
+        date: 'something',
+        description: 'Something long',
+      },
+      path: '/1',
+    },
+    {
+      id: 2,
+      title: 'Hand drawn colouring book',
+      deets: 'Colour me calm',
+      preview_img: {
+        src: 'assets/works/colourmecalm/mockup.png',
+        alt: 'Poster',
+      },
+      pageDeets: {
+        pics: [
+          'assets/works/colourmecalm/mockup.png',
+          'assets/works/colourmecalm/LAYOUTPAGES.png',
+        ],
+        embedId: '',
+        date: '',
+        description:
+          'Self led uni project drawing attention to the mental benefits of a nostalgic colouring book.',
+      },
+      path: '/2',
+    },
+    {
+      id: 3,
+      title: 'Sustainable re-brand campaign',
+      deets: 'Sainsburys try something new',
+      preview_img: {
+        src: 'assets/works/sustainablecampaign/zinecover.png',
+        alt: 'Poster',
+      },
+      pageDeets: {
+        pics: [
+          'assets/works/sustainablecampaign/zinecover.png',
+          'assets/works/sustainablecampaign/BUSSTOP.png',
+          'assets/works/sustainablecampaign/bagfinal.png',
+        ],
+        embedId: '',
+        date: '',
+        description:
+          'Self led uni project drawing attention to the mental benefits of a nostalgic colouring book.',
+      },
+      path: '/3',
+    },
+    {
+      id: 4,
+      title: 'Sustainable re-brand campaign',
+      deets: 'Pour me a whiskey babe - Tom Vandenberk',
+      preview_img: {
+        src: 'assets/works/pourmeawhiskey/dogshot.png',
+        alt: 'Poster',
+      },
+      pageDeets: {
+        pics: [],
+        embedId: 'pXsnaUh0aD4',
+        date: '',
+        description:
+          'Self led uni project drawing attention to the mental benefits of a nostalgic colouring book.',
+      },
+      path: '/4',
+    },
+  ];
+
+
+axios.post(
+      'https://sarahv-portfolio-default-rtdb.europe-west1.firebasedatabase.app/works.json',
+      examples
+    );

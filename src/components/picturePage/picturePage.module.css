@@ -1,0 +1,17 @@
+.PicturePage {
+  margin: 10px;
+  width: 40%;
+}
+
+.PicturePage img {
+  width: 100%;
+  margin: 0 0 20px 0;
+  border: 2px solid #000;
+  border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+  .PicturePage {
+    width: 100%;
+  }
+}

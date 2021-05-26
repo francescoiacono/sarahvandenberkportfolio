@@ -1,0 +1,5 @@
+export const FETCH_WORKS = 'FETCH_WORKS';
+export const FETCH_WORKS_SUCCESS = 'FETCH_WORKS_SUCCESS';
+export const FETCH_WORKS_FAIL = 'FETCH_WORKS_FAIL';
+export const SET_WORKS = 'SET_WORKS';
+export const SET_CURRENT_WORK = 'SET_CURRENT_WORK';

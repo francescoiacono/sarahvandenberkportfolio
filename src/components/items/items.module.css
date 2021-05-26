@@ -1,0 +1,15 @@
+.Items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Wrapper {
+  display: flex;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
