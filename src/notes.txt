@@ -1,4 +1,4 @@
-  const examples = [
+    const examples = [
     {
       id: 0,
       title: 'Stop motion lyric video',
@@ -92,8 +92,24 @@
       },
       path: '/4',
     },
+    {
+      id: 5,
+      title: 'Sustainable re-brand campaign',
+      deets: 'flexetarian',
+      preview_img: {
+        src: 'assets/works/flexetarian/OUTCOME_WICKED.png',
+        alt: 'Poster',
+      },
+      pageDeets: {
+        pics: [],
+        embedId: '',
+        date: '',
+        description:
+          'Self led uni project drawing attention to the mental benefits of a nostalgic colouring book.',
+      },
+      path: '/5',
+    },
   ];
-
 
 axios.post(
       'https://sarahv-portfolio-default-rtdb.europe-west1.firebasedatabase.app/works.json',
