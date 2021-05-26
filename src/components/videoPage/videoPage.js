@@ -15,19 +15,17 @@ const VideoPage = (props) => {
 
   const dispatch = useDispatch();
 
-  const checkItem = (arr) => {
-    console.log(arr);
-    arr.forEach((w) => {
-      console.log(w.path, location.pathname);
-      if (w.path === location.pathname) {
-        dispatch(setCurrentWork(w));
-      }
-    });
-  };
-
   useEffect(() => {
+    const checkItem = (arr) => {
+      arr.forEach((w) => {
+        if (w.path === location.pathname) {
+          dispatch(setCurrentWork(w));
+        }
+      });
+    };
+
     checkItem(works);
-  }, [works]);
+  }, [works, dispatch, location.pathname]);
 
   return (
     <>
@@ -41,7 +39,7 @@ const VideoPage = (props) => {
       {/* {!currentWork && checkItem(works)} */}
       {!loading && currentWork ? (
         <div className={classes.VideoPage}>
-          {currentWork.pageDeets.embedId != '' ? (
+          {currentWork.pageDeets.embedId !== '' ? (
             <YouTubePlayer embedId={currentWork.pageDeets.embedId} />
           ) : (
             <PicturePage />

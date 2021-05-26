@@ -1,13 +1,11 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { useLocation } from 'react-router';
-import { setCurrentWork } from '../../store/reducers/works/worksActions';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 import classes from './picturePage.module.css';
 
 const PicturePage = () => {
   const state = useSelector((state) => state.works);
-  const { currentWork, works } = state;
+  const { currentWork } = state;
 
   return (
     <div className={classes.PicturePage}>
