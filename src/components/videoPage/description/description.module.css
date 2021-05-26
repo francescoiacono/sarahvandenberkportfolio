@@ -23,6 +23,10 @@
   border-radius: 10px;
 }
 
+.Description p {
+  line-height: 1.3rem;
+}
+
 @media (max-width: 600px) {
   .Description {
     width: 100%;
